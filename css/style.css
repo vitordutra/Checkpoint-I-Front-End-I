@@ -80,7 +80,7 @@ ul {
 
 .flex {
   display: flex;
-  flex-direction: row;
+  flex-direction: column;
   justify-content: space-around;
   align-items: center;
 }
@@ -90,4 +90,36 @@ ul {
   margin-top: 40px;
   padding: 20px 0;
   background-color: rgba(255, 255, 255, 0.8);
+}
+
+@media(max-width:767px) {
+  .title {
+    font-size: 2rem;
+  }
+
+  .history {
+    font-size: 1.1rem;
+  }
+  article {
+    text-align: center;
+    padding: 0 5px;
+  }
+
+  article + article {
+    margin-bottom: 10px;
+  }
+
+  iframe {
+    padding: 0 0.5rem;
+    height: 75%;
+}
+  h3 {
+    font-size: 1.1rem;
+  }
+  .redes-sociais {
+    display: flex;
+  }
+  a + a {
+    margin: 5px 15px 0px;
+  }
 }
